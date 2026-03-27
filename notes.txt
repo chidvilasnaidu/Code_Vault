@@ -1,1 +1,0 @@
-time delta,frq,range
