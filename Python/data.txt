@@ -1,0 +1,2 @@
+Hello, Iam coming from  data.txt
+How are you doing!
