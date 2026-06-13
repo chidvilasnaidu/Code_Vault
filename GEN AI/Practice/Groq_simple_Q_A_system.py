@@ -1,3 +1,5 @@
+# code Entirely made by kumkapalla chidvilas
+
 from google.colab import userdata
 from groq import Groq
 import os 
