@@ -3,8 +3,8 @@
 from google.colab import userdata
 from groq import Groq
 import os 
-key=userdata.get('Gork_Key')
-os.environ['GROQ_API_KEY']=key
+key=userdata.get('Gork_Key') # Acessing secret keys , from google colab 
+os.environ['GROQ_API_KEY']=key # feeding into Environmental varibles
 client=Groq()
 #-----------------------------------------------------------------------------
 #-----------------------------------------------------------------------------
@@ -36,8 +36,6 @@ def invoke_Gork_with_prompt(client,input,prompt):
       ],
       model="llama-3.3-70b-versatile",)
       return chat_completion.choices[0].message.content
-
-
 
 #-----------------------------------------------------------------------------
 #-----------------------------------------------------------------------------
