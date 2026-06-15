@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 # Memory Based chat app
 load_dotenv()
 
-# Load API key safely
+# Load API key  safely
 os.environ['GOOGLE_API_KEY'] = os.getenv("gemini_key")
 
 # Initialize client once in session_state
