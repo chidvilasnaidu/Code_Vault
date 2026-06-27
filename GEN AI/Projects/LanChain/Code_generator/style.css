@@ -1,0 +1,221 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-buttons button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.2s ease;
+    flex-grow: 1;
+    min-width: 100px;
+}
+
+.nav-buttons button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-buttons button.active-nav {
+    background: #fdbb2d;
+    color: #1a2a6c;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(253, 187, 45, 0.6);
+}
+
+.section {
+    display: none;
+    padding: 20px 0;
+}
+
+.section.active {
+    display: block;
+}
+
+.clock-display,
+.stopwatch-display,
+.timer-display,
+.timezone-display {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 4em;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.clock-display #clockPeriod,
+.timezone-display #tzPeriod {
+    font-size: 0.5em;
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+#clockDate, #tzDate {
+    font-size: 1.2em;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.stopwatch-controls,
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.stopwatch-controls button,
+.timer-controls button {
+    background: #007bff;
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.stopwatch-controls button:hover,
+.timer-controls button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+#swStop { background-color: #dc3545; box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3); }
+#swStop:hover { background-color: #c82333; }
+#swReset, #timerReset { background-color: #6c757d; box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3); }
+#swReset:hover, #timerReset:hover { background-color: #5a6268; }
+#swLap { background-color: #28a745; box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3); }
+#swLap:hover { background-color: #218838; }
+#timerPause { background-color: #ffc107; color: #333; box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3); }
+#timerPause:hover { background-color: #e0a800; }
+
+.laps-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    text-align: left;
+}
+
+.laps-list li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.timer-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.timer-input input {
+    width: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    -moz-appearance: textfield;
+}
+.timer-input input::-webkit-outer-spin-button,
+.timer-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#timezoneSelect {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1em;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-6.5%200-12.3%203.4-15.5%208.9-3.2%205.5-3.2%2012%200%2017.5l138.8%20140.6a17.6%2017.6%200%200%200%2025.2%200l138.8-140.6c3.2-5.5%203.2-12%200-17.5z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    cursor: pointer;
+}
+
+#timezoneSelect option {
+    background: #2a3a7c;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+    .clock-display,
+    .stopwatch-display,
+    .timer-display,
+    .timezone-display {
+        font-size: 3em;
+    }
+    .nav-buttons button,
+    .stopwatch-controls button,
+    .timer-controls button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    .timer-input input {
+        width: 50px;
+        font-size: 1em;
+    }
+}
