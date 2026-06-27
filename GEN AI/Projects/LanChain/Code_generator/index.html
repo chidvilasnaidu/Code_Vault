@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-buttons">
+            <button id="clockBtn" class="active-nav">Clock</button>
+            <button id="stopwatchBtn">Stopwatch</button>
+            <button id="timerBtn">Timer</button>
+            <button id="timezoneBtn">TimeZones</button>
+        </nav>
+
+        <div id="clockSection" class="section active">
+            <div class="clock-display">
+                <span id="clockHours">00</span>:<span id="clockMinutes">00</span>:<span id="clockSeconds">00</span>
+                <span id="clockPeriod">AM</span>
+            </div>
+            <div id="clockDate"></div>
+        </div>
+
+        <div id="stopwatchSection" class="section">
+            <div class="stopwatch-display">
+                <span id="swHours">00</span>:<span id="swMinutes">00</span>:<span id="swSeconds">00</span>.<span id="swMilliseconds">000</span>
+            </div>
+            <div class="stopwatch-controls">
+                <button id="swStart">Start</button>
+                <button id="swStop">Stop</button>
+                <button id="swReset">Reset</button>
+                <button id="swLap">Lap</button>
+            </div>
+            <ul id="swLaps" class="laps-list"></ul>
+        </div>
+
+        <div id="timerSection" class="section">
+            <div class="timer-input">
+                <input type="number" id="timerHoursInput" placeholder="H" min="0" value="0">
+                <input type="number" id="timerMinutesInput" placeholder="M" min="0" max="59" value="0">
+                <input type="number" id="timerSecondsInput" placeholder="S" min="0" max="59" value="0">
+            </div>
+            <div class="timer-display">
+                <span id="timerHours">00</span>:<span id="timerMinutes">00</span>:<span id="timerSeconds">00</span>
+            </div>
+            <div class="timer-controls">
+                <button id="timerStart">Start</button>
+                <button id="timerPause">Pause</button>
+                <button id="timerReset">Reset</button>
+            </div>
+        </div>
+
+        <div id="timezoneSection" class="section">
+            <select id="timezoneSelect"></select>
+            <div class="timezone-display">
+                <span id="tzHours">00</span>:<span id="tzMinutes">00</span>:<span id="tzSeconds">00</span>
+                <span id="tzPeriod">AM</span>
+            </div>
+            <div id="tzDate"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
