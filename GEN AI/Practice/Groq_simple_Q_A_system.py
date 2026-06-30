@@ -7,7 +7,7 @@ key=userdata.get('Gork_Key') # Acessing secret keys , from google colab
 os.environ['GROQ_API_KEY']=key # feeding into Environmental varibles
 client=Groq()
 #---------------------------------------------------------------------  --------
-#-----------------------------------------------------------------------------
+#----------------------------------------------------------------------  -------
 def invoke_Gork(client, input):
     chat_completion = client.chat.completions.create(
       messages=[
