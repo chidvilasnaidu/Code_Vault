@@ -4,3 +4,4 @@ if __name__ == '__main__':
     if b!=0:
         print(a//b)
         print(a/b)
+   
