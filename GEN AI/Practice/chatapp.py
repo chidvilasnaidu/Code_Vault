@@ -2,7 +2,7 @@ import os
 from google import genai
 import streamlit as st
 from dotenv import load_dotenv
-# Memory Based chat ap p 
+# Memory Based chat app 
 load_dotenv()
 
 # Load API key  safely
