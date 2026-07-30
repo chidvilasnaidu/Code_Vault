@@ -6,7 +6,7 @@ cvvvvvvfff
 Prompt:
 "Rewrite this resume to sound more results-driven, quantifiable, and compelling for [target role]. Focus on achievements, not duties."
 
-3. ATS Boost
+3. ATS Boostvfggfg
 Prompt:
 "Optimize this resume for ATS screening for [job title]. Add relevant keywords naturally."
 
