@@ -1,7 +1,7 @@
 1. Spot the Flaws
 Prompt:
 "Act as a recruiter for [your industry/role]. Review my resume and highlight weak areas, overused buzzwords, and missing metrics. Be brutally honest."
-cvvvvvv
+cvvvvvvfff
 2. Rewrite for Impact
 Prompt:
 "Rewrite this resume to sound more results-driven, quantifiable, and compelling for [target role]. Focus on achievements, not duties."
