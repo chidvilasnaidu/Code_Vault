@@ -4,7 +4,7 @@ Prompt:
 cvvvvvvfff
 2. Rewrite for Impact
 Prompt:vvvvvvvvvvvv
-"Rewrite this resume to sound more results-driven, quantifiable, and compelling for [target role]. Focus on achievements, not duties."
+"Rewrite this resume to sound more results-driven, quantifiable, and compelling for [target role].vvvvvvvvvvvvv Focus on achievements, not duties."
 
 3. ATS Boostvfggfg
 Prompt:
