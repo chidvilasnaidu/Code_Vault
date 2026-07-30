@@ -3,7 +3,7 @@ Prompt:
 "Act as a recruiter for [your industry/role]. Review my resume and highlight weak areas, overused buzzwords, and missing metrics. Be brutally honest."vvvvvvvvvv
 cvvvvvvfff
 2. Rewrite for Impact
-Prompt:
+Prompt:vvvvvvvvvvvv
 "Rewrite this resume to sound more results-driven, quantifiable, and compelling for [target role]. Focus on achievements, not duties."
 
 3. ATS Boostvfggfg
