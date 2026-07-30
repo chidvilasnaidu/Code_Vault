@@ -1,6 +1,6 @@
 1. Spot the Flaws
 Prompt:
-"Act as a recruiter for [your industry/role]. Review my resume and highlight weak areas, overused buzzwords, and missing metrics. Be brutally honest."
+"Act as a recruiter for [your industry/role]. Review my resume and highlight weak areas, overused buzzwords, and missing metrics. Be brutally honest."vvvvvvvvvv
 cvvvvvvfff
 2. Rewrite for Impact
 Prompt:
