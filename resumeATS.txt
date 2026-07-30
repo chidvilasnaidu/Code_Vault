@@ -8,7 +8,7 @@ Prompt:
 
 3. ATS Boostvfggfg
 Prompt:
-"Optimize this resume for ATS screening for [job title]. Add relevant keywords naturally."
+"Optimize this resume for ATS screening for [job title]. Add relevant keywords naturally."bvffffffffffffff
 
 4. Craft My Hook
 Prompt:
